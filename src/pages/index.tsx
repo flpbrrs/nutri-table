@@ -1,5 +1,9 @@
+import Page from "@/components/layout/Page";
+
 export default function Home() {
   return (
-    <div>Fit table</div>
+    <Page>
+      <div>Fit table</div>
+    </Page>
   );
 }

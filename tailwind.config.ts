@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "blp-800": "var(--blp-color-600)",
+        "blp-400": "var(--blp-color-400)"
       },
     },
   },
