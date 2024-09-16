@@ -9,7 +9,7 @@ interface CardProps {
 
 export default function Card(props: CardProps) {
 
-    const saldo:number = -1200;
+    const saldo: number = -1200;
 
     return (
         <div className="rounded-md overflow-hidden bg-gradient-to-r from-emerald-400 to-indigo-800 w-full">
@@ -24,7 +24,7 @@ export default function Card(props: CardProps) {
                     <p className="text-[56px] leading-10 mb-2 font-bold">
                         {props.children}
                     </p>
-                    <span className="uppercase text-sm tracking-widest text-zinc-400 font-thin">
+                    <span className="uppercase text-sm tracking-widest text-zinc-400 font-thin leading-none">
                         {props.unit}
                     </span>
                 </div>
