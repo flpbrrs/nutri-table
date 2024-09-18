@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react"
+import type { ReactElement, ReactNode } from "react"
 
 interface CardProps {
     label: string
@@ -12,8 +12,8 @@ export default function Card(props: CardProps) {
     const saldo: number = -1200;
 
     return (
-        <div className="rounded-md overflow-hidden bg-gradient-to-r from-emerald-400 to-indigo-800 w-full">
-            <div className="bg-blp-400 p-4 mt-1 w-full flex flex-col justify-center items-center gap-4">
+        <div className="select-none rounded-md overflow-hidden bg-gradient-to-r from-emerald-400 pt-2 to-indigo-800 w-full hover:scale-110 hover:mx-8 transition-all shadow-lg [&:not(:hover)]:m-1 hover:px-2">
+            <div className="bg-blp-400 p-4 w-full flex flex-col justify-center items-center gap-4">
                 <div className="flex flex-col gap-1 justify-center items-center text-zinc-400">
                     {props.icon}
                     <p className="text-xs font-bold">
