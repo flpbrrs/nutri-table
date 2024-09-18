@@ -1,5 +1,5 @@
 import { IconFridgeOff } from "@tabler/icons-react"
-import { ReactNode } from "react"
+import type { ReactNode } from "react"
 
 interface TableProps {
     children: ReactNode
@@ -53,7 +53,7 @@ export function TableItem({ data, scope }: ItemProps) {
         )
     }
     return (
-        <td scope={scope} className="p-4 odd:bg-blp-400 first:w-auto first:text-left">
+        <td className="p-4 odd:bg-blp-400 first:w-auto first:text-left">
             {data}
         </td>
     )
@@ -65,7 +65,7 @@ export function TableEmpty() {
             <td colSpan={5}>
                 <div className="flex flex-col justify-center items-center py-12 text-blp-400">
                     <IconFridgeOff className="size-36" stroke={1} />
-                    <p className="text-xl font-thin leading-none">
+                    <p className="text-xl font-bold leading-none">
                         Vamos lá! Prepare alguma coisa...
                     </p>
                 </div>
